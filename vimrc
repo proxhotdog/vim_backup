@@ -1,6 +1,11 @@
 set number
 set encoding=utf-8
 set t_Co=256
+set hlsearch
+set cursorline
+set history=500
+set nobackup
+set noswapfile
 
 "For Vundle set up
 filetype off
