@@ -10,7 +10,7 @@ die() {
 [ -e "~/.vim" ] && die "~/.vim already exists."
 [ -e "~/.vimrc" ] && die "~/.vimrc already exists."
 
-git clone git://github.com/proxhotdog/vimrc.git "$VIMHOME"
+git clone git://github.com/proxhotdog/vim_backup.git "$VIMHOME"
 cd "$VIMHOME"
 git submodule update --init
 
@@ -18,6 +18,8 @@ cd ..
 ln -s .vim/vimrc .vimrc
 
 echo "vimrc is installed."
+
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 #reference by 
 #vgod's auto-install.sh
