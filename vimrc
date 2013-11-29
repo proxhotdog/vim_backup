@@ -6,6 +6,9 @@ set cursorline
 set history=500
 set nobackup
 set noswapfile
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 "For Vundle set up
 filetype off

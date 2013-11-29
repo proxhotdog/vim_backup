@@ -24,5 +24,5 @@ vim +BundleInstall! +qall
 
 read -p "Run vim? (y/n)" choice
 if [ "$choice" == "y" ] then
-	vim;
+  vim
 fi
