@@ -35,6 +35,8 @@ Bundle 'sudar/vim-arduino-syntax'
 au BufRead,BufNewFile *.pde set filetype=arduino
 au BufRead,BufNewFile *.ino set filetype=arduino
 
+Bundle 'plasticboy/vim-markdown'
+Bundle 'vim-scripts/yaml.vim'
 Bundle 'flazz/vim-colorschemes'
 colorscheme kolor
 
