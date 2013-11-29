@@ -21,3 +21,8 @@ echo "vimrc is installed."
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim +BundleInstall! +qall
+
+read -p "Run vim? (y/n)" choice
+if [ "$choice" == "y" ] then
+	vim;
+fi
