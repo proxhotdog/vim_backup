@@ -20,9 +20,12 @@ ln -s .vim/vimrc .vimrc
 echo "vimrc is installed."
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-vim +BundleInstall! +qall
+vim +BundleInstall +qall
 
-read -p "Run vim? (y/n)" choice
-if [ "$choice" == "y" ]; then
-  vim
-fi
+echo "Run vim?"
+select yn in "y" "n"; do
+	case $yn in
+		y ) vim;
+		n ) exit;;
+esac
+done
