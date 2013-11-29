@@ -21,5 +21,3 @@ echo "vimrc is installed."
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-#reference by 
-#vgod's auto-install.sh
