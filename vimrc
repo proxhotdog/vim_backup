@@ -52,6 +52,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/yaml.vim'
 filetype plugin indent on
 syntax enable
-auto reload vimrc
+
+"auto reload vimrc
 autocmd BufWritePost .vimrc source %
 
