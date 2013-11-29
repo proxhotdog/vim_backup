@@ -1,4 +1,3 @@
-set nocompatible
 set number
 set encoding=utf-8
 set t_Co=256
@@ -27,6 +26,10 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 Bundle 'junegunn/vim-easy-align'
+Bundle 'vim-scripts/human.vim'
+Bundle 'vim-scripts/Syntax-for-Fasta'
+au BufRead,BufNewFile *.fas set filetype=fasta
+
 Bundle 'tpope/vim-endwise'
 Bundle 'sudar/vim-arduino-syntax'
 au BufRead,BufNewFile *.pde set filetype=arduino
