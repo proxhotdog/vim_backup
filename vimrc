@@ -14,6 +14,11 @@ call vundle#rc()
 
 "Plugin management area
 Bundle 'gmarik/vundle'
+Bundle 'flazz/vim-colorschemes'
+if filereadable(expand("$HOME/.vim/bundle/vim-colorschemes/README.md"))
+    colorscheme kolor
+endif
+
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'jiangmiao/auto-pairs'
@@ -42,11 +47,8 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 
 Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/yaml.vim'
-Bundle 'flazz/vim-colorschemes'
-colorscheme kolor
-
 filetype plugin indent on
 syntax enable
 "auto reload vimrc
-autocmd BufWritePost .vimrc source %
+"autocmd BufWritePost .vimrc source %
 
