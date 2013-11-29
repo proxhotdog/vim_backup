@@ -20,12 +20,10 @@ ln -s .vim/vimrc .vimrc
 echo "vimrc is installed."
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+echo "Vundle installed."
+
 vim +BundleInstall +qall
 
-echo "Run vim?"
-select yn in "y" "n"; do
-	case $yn in
-		y ) vim;
-		n ) exit;;
-esac
-done
+echo "Bundles installed. Vim will be opened."
+
+vim
