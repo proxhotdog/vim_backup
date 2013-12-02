@@ -8,7 +8,11 @@ set nobackup
 set noswapfile
 set tabstop=4
 set shiftwidth=4
+set expandtab
 set softtabstop=4
+set list
+set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<,nbsp:_
+set smarttab
 
 "For Vundle set up
 filetype off
