@@ -54,6 +54,8 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 
 Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/yaml.vim'
+Bundle 'kana/fakeclip'
+
 filetype plugin indent on
 syntax enable
 
