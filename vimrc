@@ -47,7 +47,13 @@ Bundle 'vim-scripts/human.vim'
 Bundle 'vim-scripts/Syntax-for-Fasta'
 au BufRead,BufNewFile *.fas set filetype=fasta
 
-Bundle 'tpope/vim-endwise'
+"Disable vim-endwise to prevent clash
+"Bundle 'tpope/vim-endwise'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+
 Bundle 'sudar/vim-arduino-syntax'
 au BufRead,BufNewFile *.pde set filetype=arduino
 au BufRead,BufNewFile *.ino set filetype=arduino
