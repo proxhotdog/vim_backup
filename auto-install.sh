@@ -20,10 +20,10 @@ ln -s .vim/vimrc .vimrc
 echo "vimrc is installed."
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-echo "Vundle installed."
+echo "Vundle is  installed."
 
 vim +BundleInstall +qall
 
-echo "Bundles installed. Vim will be opened."
+echo "Bundles installed. Vim will now open."
 
 vim

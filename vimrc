@@ -1,18 +1,28 @@
-set number
-set encoding=utf-8
+"Author: proxhotdog
+"Description: my personal vimrc configuration, works on Ubuntu and partially on MacOSX
+
+"Basic settings
 set t_Co=256
+set encoding=utf-8
+set number
 set hlsearch
 set cursorline
 set history=500
+
+"No swap or backup files
 set nobackup
 set noswapfile
+
+"Tab configuration
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set softtabstop=4
+set smarttab
+
+"Show hidden characters
 set list
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<,nbsp:_
-set smarttab
 
 "For Vundle set up
 filetype off
@@ -35,6 +45,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 
 Bundle 'kien/rainbow_parentheses.vim'
 au VimEnter * RainbowParenthesesToggle
