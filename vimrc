@@ -22,7 +22,7 @@ set smarttab
 
 "Show hidden characters
 set list
-set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<,nbsp:_
+set listchars=eol:¬,tab:>-,trail:-,extends:>,precedes:<
 
 "For Vundle set up
 filetype off
