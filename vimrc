@@ -7,6 +7,7 @@ set encoding=utf-8
 set number
 set hlsearch
 set cursorline
+set cursorcolumn
 set history=500
 
 "No swap or backup files
