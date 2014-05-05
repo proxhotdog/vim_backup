@@ -74,6 +74,9 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/yaml.vim'
 Bundle 'kana/vim-fakeclip'
 Bundle 'salsifis/vim-transpose'
+Bundle 'lfilho/cosco.vim'
+autocmd FileType javascript,css,perl nmap <silent> ,; :call cosco#commaOrSemiColon()<CR>
+autocmd FileType javascript,css,perl inoremap <silent> ,; <ESC>:call cosco#commaOrSemiColon()"<CR>a"
 
 filetype plugin indent on
 syntax enable
