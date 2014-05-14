@@ -80,9 +80,16 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/yaml.vim'
 Bundle 'kana/vim-fakeclip'
 Bundle 'salsifis/vim-transpose'
-Bundle 'lfilho/cosco.vim'
-autocmd FileType javascript,css,perl nmap <silent> ,; :call cosco#commaOrSemiColon()<CR>
-autocmd FileType javascript,css,perl inoremap <silent> ,; <ESC>:call cosco#commaOrSemiColon()"<CR>a"
+
+function RunWith (command)
+    execute "w"
+    execute "!clear;time " . a:command . " " . expand("%")
+endfunction
+
+autocmd FileType ruby nmap <F5> :call RunWith("ruby")<cr>
+autocmd FileType perl nmap <F5> :call RunWith("perl")<cr>
+autocmd FileType python nmap <F5> :call RunWith("python")<cr>
+autocmd BufRead *_spec.rb nmap <F6> :w\|!clear && rspec % --format documentation --color<cr>
 
 filetype plugin indent on
 syntax enable
