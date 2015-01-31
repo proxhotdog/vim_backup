@@ -37,6 +37,7 @@ if filereadable(expand("$HOME/.vim/bundle/vim-colorschemes/README.md"))
     colorscheme kolor
 endif
 
+Bundle 'JuliaLang/julia-vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'jiangmiao/auto-pairs'
@@ -63,8 +64,8 @@ au BufRead,BufNewFile *.fas set filetype=fasta
 "Bundle 'tpope/vim-endwise'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
+"Bundle "garbas/vim-snipmate"
+"Bundle "honza/vim-snippets"
 Bundle "thoughtbot/vim-rspec"
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
