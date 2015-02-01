@@ -91,6 +91,7 @@ autocmd FileType ruby nmap <F5> :call RunWith("ruby")<cr>
 autocmd FileType perl nmap <F5> :call RunWith("perl")<cr>
 autocmd FileType python nmap <F5> :call RunWith("python")<cr>
 autocmd BufRead *_spec.rb nmap <F6> :w\|!clear && rspec % --format documentation --color<cr>
+autocmd FileType julia nmap <F5> :call RunWith("julia")<cr>
 
 filetype plugin indent on
 syntax enable
